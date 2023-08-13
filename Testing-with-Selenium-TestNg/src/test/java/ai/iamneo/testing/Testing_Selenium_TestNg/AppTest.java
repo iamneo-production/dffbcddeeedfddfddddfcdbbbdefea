@@ -1,56 +1,61 @@
 package ai.iamneo.testing.Testing_Selenium_TestNg;
 
+import org.testng.annotations.Test;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
 
 public class AppTest {
 
-    private WebDriver driver;
+	ChromeOptions chromeOptions = new ChromeOptions();
+	WebDriver driver = null;
 
-    @BeforeMethod
-    public void setUp() {
-		
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
+	@BeforeTest
+	public void beforeTest() throws Exception
+	 {
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+	}
 
-    @Test
-    public void Apptest() {
-        // Navigate to iamneo.ai
-        driver.get("http://iamneo.ai");
+	@Test
+//Checking the title of iamNeo (Home - iamneo)
+	public void iamNeo() throws InterruptedException 
+	{
 
-        // Verify page title
+		driver.get("http://iamneo.ai");
+
+        
         String pageTitle = driver.getTitle();
         Assert.assertEquals(pageTitle, "We are Hiring!", "Page title doesn't match. FAIL.");
 
-        // Navigate to Facebook
-        driver.get("https://www.facebook.com");
+       
 
-        // Navigate back to iamneo.ai
+	}
+	@Test
+//Moving to FACEBOOK
+	public void nextPage() throws InterruptedException 
+	{
+		 	
+		driver.get("https://www.facebook.com");
         driver.navigate().back();
-
-        // Print the current URL
         String currentURL = driver.getCurrentUrl();
         System.out.println("Current URL: " + currentURL);
-
-        // Navigate forward
         driver.navigate().forward();
-
-        // Reload the page
         driver.navigate().refresh();
-    }
+	}
+	
 
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
+
+	@AfterTest
+	public void afterTest() 
+	{
+		if (driver != null) {
             driver.quit();
         }
-    }
+	}
+
 }
- 
