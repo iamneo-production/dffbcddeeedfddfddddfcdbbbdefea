@@ -8,35 +8,35 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">99</td><td></td><td></td></tr>
+<tr><th colspan="8">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">98</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1691955670806</td><td rowspan="1">37</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1691955670848</td><td rowspan="1">-1691955670848</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</td><td><a href="#m2">Apptest</a></td><td rowspan="1">1691955670847</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1691956154309</td><td rowspan="1">49</td></tr><tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1691956154363</td><td rowspan="1">-1691956154363</td></tr><tr><th colspan="4">Command line test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest</td><td><a href="#m2">Apptest</a></td><td rowspan="1">1691956154362</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable must exist: /home/coder/project/workspace/Testing-with-Selenium-TestNg/path/to/chromedriver
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
-	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.setUp(AppTest.java:18)
+<h2>Command line test</h2><h3 id="m0">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: /home/coder/project/workspace/Testing-with-Selenium-TestNg/path/to/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.setUp(AppTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest#Apptest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable must exist: /home/coder/project/workspace/Testing-with-Selenium-TestNg/path/to/chromedriver
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
-	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.setUp(AppTest.java:18)
+<h3 id="m2">ai.iamneo.testing.Testing_Selenium_TestNg.AppTest#Apptest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: /home/coder/project/workspace/Testing-with-Selenium-TestNg/path/to/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.setUp(AppTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ai.iamneo.testing.Testing_Selenium_TestNg.AppTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.481 sec <<< FAILURE!
+setUp(ai.iamneo.testing.Testing_Selenium_TestNg.AppTest)  Time elapsed: 0.324 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: /home/coder/project/workspace/Testing-with-Selenium-TestNg/path/to/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.setUp(AppTest.java:19)
+
