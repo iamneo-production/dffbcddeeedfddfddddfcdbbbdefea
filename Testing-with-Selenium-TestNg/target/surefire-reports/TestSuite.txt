@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 4.282 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest  Time elapsed: 4.096 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'dffbcddeeedfddfddddfcdbbbdefea-0', ip: '10.80.6.120', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest(AppTest.java:21)
+Caused by: java.lang.IllegalArgumentException: http:34.85.242.216:4444/session could not be parsed into a proper Uri, missing host
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.beforeTest(AppTest.java:21)
+
