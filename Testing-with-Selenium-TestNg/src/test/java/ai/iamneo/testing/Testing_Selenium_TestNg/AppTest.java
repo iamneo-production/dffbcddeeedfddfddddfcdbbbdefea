@@ -18,7 +18,7 @@ public class AppTest {
 	@BeforeTest
 	public void beforeTest() throws Exception
 	 {
-			driver = new RemoteWebDriver(new URL("http://localhost:"), chromeOptions);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 	}
 
 	@Test
