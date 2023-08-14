@@ -12,13 +12,13 @@ import org.testng.annotations.AfterTest;
 
 public class AppTest {
 
-	
+	ChromeOptions chromeOptions = new ChromeOptions();
+	WebDriver driver = null;
+
 	@BeforeTest
 	public void beforeTest() throws Exception
-	{
-		ChromeOptions chromeOptions = new ChromeOptions();
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
-		
+	 {
+			driver = new RemoteWebDriver(new URL("http:34.85.242.216:4444"), chromeOptions);
 	}
 
 
@@ -35,7 +35,6 @@ public class AppTest {
 
 	}
 
-	
 	@Test
 //Moving to FACEBOOK
 	public void nextPage() throws InterruptedException 
