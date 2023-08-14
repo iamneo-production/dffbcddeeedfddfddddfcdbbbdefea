@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.076 s - in TestSuite
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 6.125 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.backPage  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Get your title]
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.backPage(AppTest.java:46)
+
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.currentURL  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Get your title]
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.currentURL(AppTest.java:54)
+
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.iamNeo  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Get your title]
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.iamNeo(AppTest.java:30)
+
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.nextPage  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Get your title]
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.nextPage(AppTest.java:38)
+
