@@ -18,9 +18,7 @@ public class AppTest {
 	@BeforeTest
 	public void beforeTest() throws Exception
 	 {
-		System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+			driver = new RemoteWebDriver(new URL("http://localhost:"), chromeOptions);
 	}
 
 	@Test
