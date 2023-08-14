@@ -40,11 +40,11 @@ public class AppTest {
 		 	
 driver.get("https://www.facebook.com");
 
-        
 
-        
 
-        
+
+
+
 
 	}
 	@Test
