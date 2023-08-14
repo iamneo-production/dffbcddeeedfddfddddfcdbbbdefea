@@ -12,13 +12,13 @@ import org.testng.annotations.AfterTest;
 
 public class AppTest {
 
-	ChromeOptions chromeOptions = new ChromeOptions();
-	WebDriver driver = null;
-
+	
 	@BeforeTest
 	public void beforeTest() throws Exception
-	 {
-			driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+	{
+		ChromeOptions chromeOptions = new ChromeOptions();
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+		
 	}
 
 
