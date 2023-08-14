@@ -34,8 +34,8 @@ public class AppTest {
         Assert.assertEquals(pageTitle, "We are Hiring!", "Page title doesn't match. FAIL.");
 
 	}
-}
-	/*
+
+	
 	@Test
 //Moving to FACEBOOK
 	public void nextPage() throws InterruptedException 
@@ -82,4 +82,4 @@ public void currentURL() throws InterruptedException
 
 }
 
-*/
+
