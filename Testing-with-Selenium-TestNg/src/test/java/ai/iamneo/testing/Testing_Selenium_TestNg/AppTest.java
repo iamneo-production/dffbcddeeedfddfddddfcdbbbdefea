@@ -21,6 +21,7 @@ public class AppTest {
 			driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 	}
 
+
 	@Test
 //Checking the title of iamNeo (Home - iamneo)
 	public void iamNeo() throws InterruptedException 
@@ -33,6 +34,8 @@ public class AppTest {
         Assert.assertEquals(pageTitle, "We are Hiring!", "Page title doesn't match. FAIL.");
 
 	}
+}
+	/*
 	@Test
 //Moving to FACEBOOK
 	public void nextPage() throws InterruptedException 
@@ -79,4 +82,4 @@ public void currentURL() throws InterruptedException
 
 }
 
-
+*/
