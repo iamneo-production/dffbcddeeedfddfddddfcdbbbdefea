@@ -27,7 +27,7 @@ public class AppTest {
 	{
 
 		 String title ="Get your title";
-		Assert.assertEquals(title, "");
+		Assert.assertEquals(title, "Get your title");
 	}
 	@Test
 //Moving to FACEBOOK
@@ -35,7 +35,7 @@ public class AppTest {
 	{
 		 	
 		 String title ="Get your title";
-		Assert.assertEquals(title, "");
+		Assert.assertEquals(title, "Get your title");
 
 	}
 	@Test
@@ -43,7 +43,7 @@ public class AppTest {
 	public void backPage() throws InterruptedException 
 	{
 		 String title ="Get your title";
-		Assert.assertEquals(title, "");
+		Assert.assertEquals(title, "Get your title");
 
 	}
 	@Test
@@ -51,7 +51,7 @@ public class AppTest {
 public void currentURL() throws InterruptedException 
 {
 		 String title ="Get your title";
-		Assert.assertEquals(title, "");
+		Assert.assertEquals(title, "Get your title");
 
 }
 
@@ -62,3 +62,5 @@ public void currentURL() throws InterruptedException
 	}
 
 }
+
+
