@@ -18,7 +18,7 @@ public class AppTest {
 	@BeforeTest
 	public void beforeTest() throws Exception
 	 {
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 	}
 
 	@Test
@@ -26,32 +26,48 @@ public class AppTest {
 	public void iamNeo() throws InterruptedException 
 	{
 
-		 String title ="Get your title";
-		Assert.assertEquals(title, "Get your title");
+		driver.get("http://iamneo.ai");
+
+        // Verify page title
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals(pageTitle, "We are Hiring!", "Page title doesn't match. FAIL.");
+
 	}
 	@Test
 //Moving to FACEBOOK
 	public void nextPage() throws InterruptedException 
 	{
 		 	
-		 String title ="Get your title";
-		Assert.assertEquals(title, "Get your title");
+driver.get("https://www.facebook.com");
+
+        
+
+        
+
+        
 
 	}
 	@Test
 //Back to iamNeo
 	public void backPage() throws InterruptedException 
 	{
-		 String title ="Get your title";
-		Assert.assertEquals(title, "Get your title");
+		 // Navigate back to iamneo.ai
+        driver.navigate().back();
 
 	}
 	@Test
 //Current URL
 public void currentURL() throws InterruptedException 
 {
-		 String title ="Get your title";
-		Assert.assertEquals(title, "Get your title");
+		 // Print the current URL
+        String currentURL = driver.getCurrentUrl();
+        System.out.println("Current URL: " + currentURL);
+// Navigate forward
+        driver.navigate().forward();
+
+        // Reload the page
+        driver.navigate().refresh();
+
 
 }
 
